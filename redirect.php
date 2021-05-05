@@ -9,7 +9,8 @@ date_default_timezone_set('Asia/Kolkata');
 //echo "sssfff";
 // username and password sent from form 
 $myusername=$_POST['UserName']; 
-$mypassword=$_POST['Password']; 
+$mypassword=$_POST['Password'];
+
 
 // To protect MySQL injection (more detail about MySQL injection)
 $myusername = stripslashes($myusername);
@@ -21,6 +22,7 @@ if(isset($_POST['login']))
 echo "teacher $myusername $mypassword";
 
 $sql="SELECT * FROM $tbl_name WHERE username='$myusername' and password='$mypassword'";
+
 $result=mysqli_query($con,$sql);
 
 // Mysql_num_row is counting table row

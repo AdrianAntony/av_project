@@ -112,10 +112,7 @@ include("header.php");
 					
 					
 					
-					  <div class="col-md-6">
-					  <img src='img/business-man.png' height='450px;'>
-					  </div>
-					
+					  
 					
 					
 					

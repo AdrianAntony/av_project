@@ -5,7 +5,7 @@ session_start();
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Confer - Consulting Website Template Free Download</title>
+        <title>EasyEDU</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Consulting Website Template Free Download" name="keywords">
         <meta content="Consulting Website Template Free Download" name="description">
@@ -34,15 +34,10 @@ session_start();
                     <div class="col-md-8">
                         <div class="top-bar-left">
                             <div class="text">
-                                <i class="far fa-clock"></i>
-                                <h2>8:00 - 9:00</h2>
-                                <p>Mon - Fri</p>
+                                
+                            <p>Welcome  <?php echo $_SESSION['login_name']; ?></p>
                             </div>
-                            <div class="text">
-                                <i class="fa fa-phone-alt"></i>
-                                <h2>+123 456 7890</h2>
-                                <p>Welcome  <?php echo $_SESSION['login_user']; ?></p>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -63,7 +58,7 @@ session_start();
         <!-- Nav Bar Start -->
  <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">Confer</a>
+                <a href="index.html" class="navbar-brand">EasyEDU</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>

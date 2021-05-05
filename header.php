@@ -4,7 +4,7 @@ error_reporting(0);
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Confer - Consulting Website Template Free Download</title>
+        <title>EasyEDU</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Consulting Website Template Free Download" name="keywords">
         <meta content="Consulting Website Template Free Download" name="description">
@@ -33,15 +33,9 @@ error_reporting(0);
                     <div class="col-md-8">
                         <div class="top-bar-left">
                             <div class="text">
-                                <i class="far fa-clock"></i>
-                                <h2>8:00 - 9:00</h2>
-                                <p>Mon - Fri</p>
+                                <h2>EasyEDU</h2>
                             </div>
-                            <div class="text">
-                                <i class="fa fa-phone-alt"></i>
-                                <h2>+123 456 7890</h2>
-                                <p>For Appointment</p>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="col-md-4">
