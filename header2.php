@@ -34,12 +34,22 @@ $page = basename($_SERVER['PHP_SELF']);
                 <div class="row">
                     <div class="col-md-8">
                         <div class="top-bar-left">
-                            <div class="text">
-                                
-                            <p>Welcome  <?php echo $_SESSION['login_name'];?></p>
-                            </div>
                             
+                            <div class="text">
+                                <h2><?php if($page =='index.php'){ echo "Home";}else if($page=='contact.php'){echo "Contact";}
+                                else if($page=='about.php'){echo "About";} else if($page=='login.php'){echo "Login";}
+                                else if($page=='register.php'){echo "Register";}else if($page=='note_upload.php'){echo "Uploads";}
+                                else if($page=='dashboard.php'){echo "Services";} ?> </h2>
+                            </div>
                         </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="top-bar-right">
+                    
+                          <div class="text">
+                          <h2>Welcome  <?php echo $_SESSION['login_name'];?></h2>
+                          </div>
+                    </div>
                     </div>
                     
                 </div>
