@@ -1,5 +1,6 @@
 <?php
 session_start();
+$page = basename($_SERVER['PHP_SELF']);
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -35,21 +36,12 @@ session_start();
                         <div class="top-bar-left">
                             <div class="text">
                                 
-                            <p>Welcome  <?php echo $_SESSION['login_name']; ?></p>
+                            <p>Welcome  <?php echo $_SESSION['login_name'];?></p>
                             </div>
                             
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="top-bar-right">
-                            <div class="social">
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -65,19 +57,14 @@ session_start();
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.php" class="nav-item nav-link active">Home</a>
-                        <a href="about.php" class="nav-item nav-link">About</a>
-                        <a href="service.php" class="nav-item nav-link">Service</a>
-                        <a href="feature.php" class="nav-item nav-link">Feature</a>
+                    <a href="index.php" <?php if($page == 'index.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Home</a>
+                        <a href="dashboard.php" <?php if($page == 'dashboard.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Services</a>
+                        <a href="note_upload.php" <?php if($page == 'note_upload.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Uploads</a>
                      
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Login</a>
-                            <div class="dropdown-menu">
-                                <a href="login.php" class="dropdown-item">Login</a>
-                                <a href="register.php" class="dropdown-item">Register</a>
-                            </div>
-                        </div>
+                        
                         <a href="index.php" class="nav-item nav-link">Logout</a>
+                        <a href="about.php" <?php if($page == 'about.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>About</a>
+                        <a href="contact.php" <?php if($page == 'contact.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Contact</a>
                     </div>
                 </div>
             </div>

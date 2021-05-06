@@ -1,5 +1,6 @@
 <?php
 error_reporting(0);
+$page = basename($_SERVER['PHP_SELF']);
 ?><!DOCTYPE html>
 <html lang="en">
     <head>
@@ -33,7 +34,7 @@ error_reporting(0);
                     <div class="col-md-8">
                         <div class="top-bar-left">
                             <div class="text">
-                                <h2>EasyEDU</h2>
+                                <h2>EasyEDU </h2>
                             </div>
                             
                         </div>
@@ -63,19 +64,19 @@ error_reporting(0);
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.php" class="nav-item nav-link active">Home</a>
-                        <a href="about.php" class="nav-item nav-link">About</a>
-                        <a href="service.php" class="nav-item nav-link">Service</a>
-                        <a href="feature.php" class="nav-item nav-link">Feature</a>
+                    <a href="index.php" <?php if($page == 'index.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Home</a>
+                    <a href="login.php" <?php if($page == 'service.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Services</a>
+                    <a href="login.php" <?php if($page == 'note_upload.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Uploads</a>
                      
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Login</a>
+                        <a href="#" data-toggle="dropdown" <?php if($page == 'login.php' OR $page=='register.php'){ echo ' class="nav-link dropdown-toggle active"';}else{echo 'class="nav-link dropdown-toggle"';}?>>SignIn</a>
                             <div class="dropdown-menu">
                                 <a href="login.php" class="dropdown-item">Login</a>
                                 <a href="register.php" class="dropdown-item">Register</a>
                             </div>
                         </div>
-                        <a href="contact.php" class="nav-item nav-link">Contact</a>
+                        <a href="about.php" <?php if($page == 'about.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>About</a>
+                        <a href="contact.php" <?php if($page == 'contact.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Contact</a>
                     </div>
                 </div>
             </div>

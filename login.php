@@ -22,7 +22,7 @@ include("header.php");
                         <div class="contact-form">
 							<?php
 				  if($_REQUEST['a']==1)
-				  echo "<div class='alert alert-danger'>INVALID USERNAME AND PASSWORD ...</div>";
+				  echo "<div class='alert alert-danger'>INVALID USERNAME AND PASSWORD</div>";
 				  ?>
                             <div id="success"></div>
                             <form name="sentMessage" action='redirect.php' method='post' novalidate="novalidate">
