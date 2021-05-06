@@ -23,7 +23,7 @@ include("header.php");
                             </div>
                             <div class="contact-text">
                                 <h3>Our Head Office</h3>
-                                <p>123 Street, New York, USA</p>
+                                <p>EasyEDU</p>
                             </div>
                         </div>
                         <div class="contact-info">
@@ -32,7 +32,7 @@ include("header.php");
                             </div>
                             <div class="contact-text">
                                 <h3>Call for Help</h3>
-                                <p>+012 345 6789</p>
+                                <p>+91 XXXXXXXX</p>
                             </div>
                         </div>
                         <div class="contact-info">
