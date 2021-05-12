@@ -59,13 +59,14 @@ $page = basename($_SERVER['PHP_SELF']);
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
                     <a href="index.php" <?php if($page == 'index.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Home</a>
-                    <a href="login.php" <?php if($page == 'service.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Services</a>
-                    <a href="login.php" <?php if($page == 'note_upload.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Uploads</a>
+                   
+                   
                      
                         <div class="nav-item dropdown">
                         <a href="#" data-toggle="dropdown" <?php if($page == 'login.php' OR $page=='register.php'){ echo ' class="nav-link dropdown-toggle active"';}else{echo 'class="nav-link dropdown-toggle"';}?>>SignIn</a>
                             <div class="dropdown-menu">
                                 <a href="login.php" class="dropdown-item">Login</a>
+								<a href="slogin.php" class="dropdown-item">Staff Login</a>
                                 <a href="register.php" class="dropdown-item">Register</a>
                             </div>
                         </div>
