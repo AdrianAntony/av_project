@@ -26,8 +26,8 @@ Choose a file to upload: <input name="uploadedfile" type="file" /><br />
 			  
 			  <?php
 			  include("db/connection.php");
-			  echo "<table class='table'>";
-			  	  $sql2 = "select *  from sd_file where username='$_SESSION[login_user]' ";
+			  echo "<table class='table' border=1>";
+			  	  $sql2 = "select *  from sd_file where username='$_SESSION[login_user]' and category='student file upload' ";
     $result2 = mysqli_query($con, $sql2) or die("Error in Selecting " . mysqli_error($connection));
 while($row2 =mysqli_fetch_array($result2))
 {
