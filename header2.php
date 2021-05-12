@@ -69,7 +69,7 @@ $page = basename($_SERVER['PHP_SELF']);
                     <div class="navbar-nav ml-auto">
                     <a href="index.php" <?php if($page == 'index.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Home</a>
                         <a href="dashboard.php" <?php if($page == 'dashboard.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Services</a>
-                        <a href="note_upload.php" <?php if($page == 'note_upload.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Uploads</a>
+                        
                      
                         
                         <a href="index.php" class="nav-item nav-link">Logout</a>
