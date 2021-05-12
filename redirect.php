@@ -50,7 +50,7 @@ $d=date('Y:m:d H:i:s');
 
 $ip=$_SERVER['REMOTE_ADDR'];
 $_SESSION['login_user']=$myusername;
-$_SESSION['login_name']=$myusername;
+$_SESSION['login_name']=$row['name'];
 $_SESSION['user']=$myusername;
 
 	header("location:dashboard.php");
@@ -72,8 +72,3 @@ header("location:login.php?a=1");
 }
 
 ?>
- 
- 
-
-
-
