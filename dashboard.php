@@ -53,7 +53,7 @@ include("header2.php");
                             <p>
                                 Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
                             </p>
-                            <a href="">Exam Center</a>
+                            <a href="exam_upload.php">Exam Center</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -63,7 +63,7 @@ include("header2.php");
                             <p>
                                 Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
                             </p>
-                            <a href="">Assignment Center</a>
+                            <a href="ass_upload.php">Assignment Center</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -83,7 +83,7 @@ include("header2.php");
                             <p>
                                 Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
                             </p>
-                            <a href="uploader.php">Certificates</a>
+                            <a href="cert_upload.php">Certificates</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
