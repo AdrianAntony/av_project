@@ -10,14 +10,19 @@ include("header2.php");
 
         <!-- Service Start -->
         <div class="service mt-125">
-            <div class="container">
+            <div class="container col-md-3">
               <h1>Upload Files</h1>
 			  
-			  <form enctype="multipart/form-data" action="uploader.php" method="POST">
-
-Choose a file to upload: <input name="uploadedfile" type="file" /><br />
-<input type="submit" value="Upload File" />
-</form>
+              <form enctype="multipart/form-data" action="ass_uploader.php" class="mt-4" method="POST">
+              <div class="form-gruop">
+                <label class="font-weight-light" style="color:black;">Choose a file to upload</label> 
+                <input name="uploadedfile" class=" rounded border border-secondary p-1" type="file" />
+              </div>
+              
+              <div class="form-group mt-3">
+                <input type="submit" class="btn btn-success" value="Upload File" />
+              </div>
+                </form>
 			  
 			  
 			  
