@@ -11,7 +11,7 @@ include("header3.php");
         <!-- Service Start -->
         <div class="service mt-125">
             <div class="container">
-              <h1>Upload Files</h1>
+              <h1>Upload Exam Files</h1>
 			  
 			  <form enctype="multipart/form-data" action="exam_uploader.php" method="POST">
 
