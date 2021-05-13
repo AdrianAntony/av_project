@@ -15,16 +15,6 @@
                                     
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="footer-link">
-                                    <h2>Quick Links</h2>
-                                    <a href="">Terms of use</a>
-                                    <a href="">Privacy policy</a>
-                                    <a href="">Cookies</a>
-                                    <a href="">Help</a>
-                                    <a href="">FAQs</a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     
