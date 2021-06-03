@@ -25,27 +25,22 @@ $page = basename($_SERVER['PHP_SELF']);
         <div class="contact mt-125">
             <div class="container">
                 <div class="section-header">
-                    <p>Get In Touch</p>
+                    
                     <h2>Get In Touch For Any Query</h2>
                 </div>
                 <div class="row align-items-center">
                     <div class="col-md-5">
-                        <div class="contact-info">
-                            <div class="contact-icon">
-                                <i class="fa fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Our Head Office</h3>
-                                <p>EasyEDU</p>
-                            </div>
-                        </div>
+                        
                         <div class="contact-info">
                             <div class="contact-icon">
                                 <i class="fa fa-phone-alt"></i>
                             </div>
                             <div class="contact-text">
-                                <h3>Call for Help</h3>
-                                <p>+91 XXXXXXXX</p>
+                                <h3>Call for help in any of the number</h3>
+								<a href="tel:+91 8089509058">+91 8089509058</a>
+								<a href="tel:+91 8943111923">+91 8943111923</a>
+								<a href="tel:+91 8137854416">+91 8137854416</a>
+								<a href="tel:+91 9446400905">+91 9446400905</a>
                             </div>
                         </div>
                         <div class="contact-info">
@@ -54,7 +49,10 @@ $page = basename($_SERVER['PHP_SELF']);
                             </div>
                             <div class="contact-text">
                                 <h3>Email for Information</h3>
-                                <p>info@example.com</p>
+                                <p>abhirami.b23@gmail.com</p>
+								<p>neethusyam96@gmail.com</p>
+								<p>anojjoseph1@gmail.com</p>
+								<p>adrianantony8@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -112,6 +110,6 @@ $page = basename($_SERVER['PHP_SELF']);
         <!-- Footer Start -->
     
 <?php
-include("footer.php");
+
 
 ?>
