@@ -15,7 +15,7 @@ include("header.php");
             <div class="container">
                 <div class="section-header">
                   
-                    <h2>LOGIN DETAILS </h2>
+                    <h2>LOGIN</h2>
                 </div>
                 <div class="row align-items-center">
                    

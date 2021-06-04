@@ -21,7 +21,7 @@ include("header2.php");
                             <img src="img/icon-8.png" alt="Icon">
                             <h3>Assignments</h3>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
+                               Do assignments, progress yourself and find the solutions easily.
                             </p>
                              <a href="ass_upload.php">Assignment Center</a>
                         </div>
@@ -31,7 +31,7 @@ include("header2.php");
                             <img src="img/icon-1.png" alt="Icon">
                             <h3>Exams</h3>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
+                                Examine your learnings is important to realize your knowledge.
                             </p>
                             <a href="exam_upload.php">Exam Center</a>
                         </div>
@@ -41,7 +41,7 @@ include("header2.php");
                             <img src="img/icon-12.png" alt="Icon">
                             <h3>Certificates</h3>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
+                                Submit the documents to prove your credentials and other activities.
                             </p>
 							<a href="cert_upload.php">Certificates</a>
                         </div>
@@ -51,9 +51,9 @@ include("header2.php");
 							<img src="img/icon-10.png" alt="Icon">
                             <h3>Queries & Requests</h3>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
+                                Ask your queries and give the requests to improve and manage ourself.
                             </p>
-                            <a href="contact.php">View Attendance</a>
+                            <a href="contact.php">Queries</a>
                         </div>
                     </div>
                     

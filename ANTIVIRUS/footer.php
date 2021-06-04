@@ -7,11 +7,10 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="footer-contact">
-                                    <h2>Our Team</h2>
-                                    <p><i class="fa fa-phone-alt"></i>+91 8089509058</p>
-                                    <p><i class="fa fa-phone-alt"></i>+91 8943111923</p>
-                                    <p><i class="fa fa-phone-alt"></i>+91 8137854416</p>
-                                    <p><i class="fa fa-phone-alt"></i>+91 9446400905</p>
+                                    <h2>Connect To Us</h2>
+                                    <a href="https://www.facebook.com/"><img src="img/icon-14.png" alt="icon"></a>
+                                    <a href="https://www.instagram.com/" class="p-3"><img src="img/icon-15.png" alt="icon"></a>
+                                    <a href="https://in.linkedin.com/"><img src="img/icon-16.png" alt="icon"></a>
                                     
                                 </div>
                             </div>
