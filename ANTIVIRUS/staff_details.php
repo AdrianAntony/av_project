@@ -1,5 +1,5 @@
 <?php
-include("header2.php");
+include("header1.php");
 ?>
         <!-- Top Bar End -->
 
@@ -11,6 +11,7 @@ include("header2.php");
         <!-- Service Start -->
         <div class="service mt-125">
             <div class="container">
+			<h2 class="text-center pb-4 "><u>FACULTY TABLE</u></h2>
               
                <?php
 			   include("db/connection.php");

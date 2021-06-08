@@ -21,10 +21,9 @@ include("header.php");
                     <div class="col-md-6">
                         <div class="contact-form">
 						
-						<?php
-				  if($_REQUEST['a']==1)
-				  echo "<div class='alert alert-danger'>REGISTERED SUCCESSFUL ...</div>";
-				  ?>
+			        <?php if ($_REQUEST['a']==1) { ?>
+				        <div class="alert alert-success">REGISTERED SUCCESSFULLY</div>
+				    <?php } ?>
                             <div id="success"></div>
                            
 

@@ -6,7 +6,7 @@ if($_SESSION['login_name']=="")
 	include("header.php");
 }
 else{
-	include("header3.php");
+	include("header1.php");
 }
 ?>
 

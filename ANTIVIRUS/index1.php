@@ -1,8 +1,7 @@
 <?php
 session_start();
-session_destroy();
 error_reporting(0);
-include("header.php");
+include("header1.php")
 
 
 ?>
@@ -23,8 +22,8 @@ include("header.php");
                             Learn everyday. Successful people commit to learning every single day.
                             </p>
                             <div class="carousel-btn">
-                                <a class="btn" href="login.php"><i class="fa fa-user"></i>Login</a>
-                                <a class="btn" href="register.php" ><i class="fa fa-address-card"></i>Register</a>
+                                <a class="btn" href=""><i class="fa fa-user"></i><?php echo $_SESSION['login_name'];?></a>
+                                <!-- <a class="btn" href="register.php" ><i class="fa fa-address-card"></i>Register</a> -->
                             </div>
                         </div>
                     </div>
@@ -38,8 +37,8 @@ include("header.php");
                             When you are going to embrace the unknown you are going to embrace your own reflection and that is going to surprise you.
                             </p>
                             <div class="carousel-btn">
-                                <a class="btn" href="login.php"><i class="fa fa-user"></i>Login</a>
-                                <a class="btn" href="register.php" ><i class="fa fa-address-card"></i>Register</a>
+                                <a class="btn" href=""><i class="fa fa-user"></i><?php echo $_SESSION['login_name'];?></a>
+                                <!-- <a class="btn" href="register.php" ><i class="fa fa-address-card"></i>Register</a> -->
                             </div>
                         </div>
                     </div>
@@ -53,8 +52,8 @@ include("header.php");
                             Stick to your goals till the very end because no one knows what fate has in mind for you if you change them.
                             </p>
                             <div class="carousel-btn">
-                                <a class="btn" href="login.php"><i class="fa fa-user"></i>Login</a>
-                                <a class="btn" href="register.php" ><i class="fa fa-address-card"></i>Register</a>
+                                <a class="btn" href=""><i class="fa fa-user"></i><?php echo $_SESSION['login_name'];?></a>
+                                <!-- <a class="btn" href="register.php" ><i class="fa fa-address-card"></i>Register</a> -->
                             </div>
                         </div>
                     </div>

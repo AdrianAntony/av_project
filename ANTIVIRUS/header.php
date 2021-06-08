@@ -34,10 +34,27 @@ $page = basename($_SERVER['PHP_SELF']);
                     <div class="col-md-8">
                         <div class="top-bar-left">
                             <div class="text">
-                                <h2><?php if($page =='index.php'){ echo "Home";}else if($page=='contact.php'){echo "Contact";}
-                                else if($page=='about.php'){echo "About";} else if($page=='login.php'){echo "Login";}
-                                else if($page=='register.php'){echo "Register";}else if($page=='note_upload.php'){echo "Uploads";}
-                                else if($page=='dashboard.php'){echo "Services";} ?> </h2>
+                                <h2><?php switch ($page){
+                                    case "alogin.php": echo "Admin Login";
+                                    break;
+
+                                    case "slogint.php": echo "Faculty Login";
+                                    break;
+
+                                    case "login.php": echo "Login";
+                                    break;
+
+                                    case "contact.php": echo "Contact";
+                                    break;
+
+                                    case "index.php": echo "Home";
+                                    break;
+
+                                    case "about.php": echo "About";
+                                    break;
+
+                                    default : echo "EasyEDU";
+                                } ?> </h2>
                             </div>
                             
                         </div>
@@ -67,7 +84,7 @@ $page = basename($_SERVER['PHP_SELF']);
                             <div class="dropdown-menu">
                                 <a href="login.php" class="dropdown-item">Login</a>
 								<a href="slogin.php" class="dropdown-item">Staff Login</a>
-                                <a href="slogin.php" class="dropdown-item">Admin</a>
+                                <a href="alogin.php" class="dropdown-item">Admin</a>
                                 
                             </div>
                         </div>

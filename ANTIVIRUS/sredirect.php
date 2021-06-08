@@ -21,7 +21,7 @@ if(isset($_POST['login']))
 {
 echo "teacher $myusername $mypassword";
 
-$sql="SELECT * FROM $tbl_name WHERE username='$myusername' and password='$mypassword'";
+$sql="SELECT * FROM $tbl_name WHERE username='$myusername' and password='$mypassword' and privilege='Staff'";
 
 $result=mysqli_query($con,$sql);
 
