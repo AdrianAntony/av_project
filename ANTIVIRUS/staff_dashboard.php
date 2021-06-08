@@ -1,5 +1,5 @@
 <?php
-include("header2.php");
+include("header_staff.php");
 ?>
         <!-- Top Bar End -->
 
@@ -16,7 +16,8 @@ include("header2.php");
                     <h2>Our Best Services</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                  
+ <div class="col-lg-3 col-md-6">
                         <div class="service-item">
                             <img src="img/icon-4.png" alt="Icon">
                             <h3>Student</h3>
@@ -26,6 +27,31 @@ include("header2.php");
                             <a href="student_details.php">Student Dashboard</a>
                         </div>
                     </div>
+					
+					
+				  <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <img src="img/icon-4.png" alt="Icon">
+                            <h3>Student</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
+                            </p>
+                            <a href="student_form.php">Student Dashboard</a>
+                        </div>
+                    </div>
+					
+					 <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <img src="img/icon-4.png" alt="Icon">
+                            <h3>Faculty</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
+                            </p>
+                            <a href="faculty_form.php">Faculty Add</a>
+                        </div>
+                    </div>
+					
+					
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item">
                             <img src="img/icon-4.png" alt="Icon">
@@ -63,7 +89,7 @@ include("header2.php");
                             <p>
                                 Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
                             </p>
-                            <a href="">Assignment Center</a>
+                            <a href="stud_assignment_file_detailsA.php">Assignment View</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
