@@ -19,6 +19,7 @@ $dir="ANTIVIRUS";
 
 
 
+
  function get_all_directory_and_files($dir){
  $dir2="";
      $dh = new DirectoryIterator($dir);   
