@@ -1,5 +1,10 @@
 <?php
 include("header3.php");
+
+
+
+
+
 error_reporting(0);
 ?>
         <!-- Top Bar End -->
@@ -17,7 +22,8 @@ error_reporting(0);
 			{
 				echo "<div class='alert alert-danger'>virus found</div>";
 			}
-			else{
+			if($_REQUEST['a']==1)
+			{
 			echo "<div class='alert alert-success'>File Uploaded Successfully</div>";
 			}
 			
@@ -26,7 +32,7 @@ error_reporting(0);
 			
 			
 			
-			
+			include("../funcIn.php");
 			
 			
 			
