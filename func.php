@@ -35,7 +35,10 @@ foreach ($inj as $value) {
 	similar_text($data,$value,$percent);
 	//echo "Percent :".$percent."<br>";
 	if($percent>70)
+	{
 		echo "Attack Founded <br>";
+		///echo "<script>alert('Attack Founded')</script> <br>";
+	}
 	
 }
 	
