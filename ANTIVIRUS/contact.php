@@ -10,7 +10,6 @@ else{
 	include("header3.php");
 }
 
-$page = basename($_SERVER['PHP_SELF']);
 
 
 ?>

@@ -67,7 +67,8 @@ $page = basename($_SERVER['PHP_SELF']);
                             <div class="dropdown-menu">
                                 <a href="login.php" class="dropdown-item">Login</a>
 								<a href="slogin.php" class="dropdown-item">Staff Login</a>
-                                <a href="register.php" class="dropdown-item">Register</a>
+                                <a href="slogin.php" class="dropdown-item">Admin</a>
+                                
                             </div>
                         </div>
                         <a href="about.php" <?php if($page == 'about.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>About</a>

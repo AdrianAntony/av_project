@@ -21,7 +21,7 @@ if(isset($_POST['login']))
 {
 echo "teacher $myusername $mypassword";
 
-$sql="SELECT * FROM $tbl_name WHERE email_id='$myusername' and password='$mypassword'";
+$sql="SELECT * FROM $tbl_name WHERE username='$myusername' and password='$mypassword'";
 
 $result=mysqli_query($con,$sql);
 
@@ -32,7 +32,7 @@ echo $count;
 if($count==1)
 {
 // Register $myusername, $mypassword and redirect to file "login_success.php"
- $result = mysqli_query($con,"SELECT * FROM $tbl_name WHERE email_id='$myusername' and password='$mypassword'") or die('Could not connect: ' . mysqli_error($con));
+ $result = mysqli_query($con,"SELECT * FROM $tbl_name WHERE username='$myusername' and password='$mypassword'") or die('Could not connect: ' . mysqli_error($con));
 
 while($row = mysqli_fetch_array($result))
   {

@@ -1,5 +1,5 @@
 <?php
-include("header3.php");
+include("header2.php");
 ?>
         <!-- Top Bar End -->
 
@@ -19,21 +19,22 @@ include("header3.php");
 			   {
 			   mysqli_query($con, "delete from sd_file where id='$_REQUEST[del_id]'") or die("Error in Selecting " . mysqli_error($con));
 			   
-			   echo "<div class='alert alert-danger'>Data Deleted SUccessfully</div>";
+			//    echo "<div class='alert alert-danger'>Data Deleted SUccessfully</div>";
 			   }
 			   
 			   echo "<table class='table'>";
 			   
-			   	echo "<tr>
-		<td>  Name </td>
-		<td>  Username </td>
+			   	echo "<tr class='font-weight-bold'>
+		<td> File Name </td>
+		<td>  Uploaded By </td>
 		
-		<td>  Course </td>
+		<td>  Date & Time </td>
+		<td>  Category </td>
 			
-		<td>  Del </td>
+		<td>  Delete File</td>
 		
 		</tr>";
-			   	  $sql2 = "select *  from sd_file where category='assignment'";
+			   	  $sql2 = "select *  from sd_file";
     $result2 = mysqli_query($con, $sql2) or die("Error in Selecting " . mysqli_error($con));
 
     while($row2 =mysqli_fetch_array($result2))
@@ -43,8 +44,9 @@ include("header3.php");
 		<td>  $row2[username] </td>
 		
 		<td>  $row2[date_upload] </td>
+		<td>  $row2[category] </td>
 		
-		<td> <a href='?del_id=$row2[id]'>Del</a> </td>
+		<td> <a class='btn btn-danger' href='?del_id=$row2[id]'>Del</a> </td>
 		</tr>";
 	}
 	echo "</table>";

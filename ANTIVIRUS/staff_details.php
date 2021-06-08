@@ -1,5 +1,5 @@
 <?php
-include("header_staff.php");
+include("header2.php");
 ?>
         <!-- Top Bar End -->
 
@@ -19,18 +19,20 @@ include("header_staff.php");
 			   {
 			   mysqli_query($con, "delete from faculty where id='$_REQUEST[del_id]'") or die("Error in Selecting " . mysqli_error($con));
 			   
-			   echo "<div class='alert alert-danger'>Data Deleted SUccessfully</div>";
+			//    echo "<div class='alert alert-danger'>Data Deleted Successfully</div>";
 			   }
 			   
 			   echo "<table class='table'>";
 			   
-			   	echo "<tr>
+			   	echo "<tr class='font-weight-bold'>
 		<td>  Name </td>
+		<td>  Mobile </td>
 		<td>  Username </td>
 		
 		<td>  Course </td>
+		<td>  Privilege </td>
 			
-		<td>  Del </td>
+		<td>  Delete </td>
 		
 		</tr>";
 			   	  $sql2 = "select *  from faculty";
@@ -41,11 +43,12 @@ include("header_staff.php");
 		echo "<tr>
 		<td>  $row2[name] </td>
 		<td>  $row2[mobile] </td>
-		<td>  $row2[email] </td>
-		
+		<td>  $row2[username] </td>
 		<td>  $row2[course] </td>
 		
-		<td> <a href='?del_id=$row2[id]'>Del</a> </td>
+		<td>  $row2[privilege] </td>
+		
+		<td> <a class='btn btn-danger' href='?del_id=$row2[id]'>Del</a> </td>
 		</tr>";
 	}
 	echo "</table>";

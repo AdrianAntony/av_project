@@ -1,5 +1,5 @@
 <?php
-include("header2.php");
+include("header3.php");
 ?>
         <!-- Top Bar End -->
 
@@ -23,7 +23,7 @@ include("header2.php");
                             <p>
                                Do assignments, progress yourself and find the solutions easily.
                             </p>
-                             <a href="ass_upload.php">Assignment Center</a>
+                             <a href="ass_upload.php">Assignment Cell</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -33,7 +33,7 @@ include("header2.php");
                             <p>
                                 Examine your learnings is important to realize your knowledge.
                             </p>
-                            <a href="exam_upload.php">Exam Center</a>
+                            <a href="exam_upload.php">Exam Cell</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">

@@ -1,5 +1,5 @@
 <?php
-include("header3.php");
+include("header2.php");
 ?>
         <!-- Top Bar End -->
 
@@ -15,36 +15,41 @@ include("header3.php");
                <?php
 			   include("db/connection.php");
 			   
-			   if($_REQUEST['del_id']!='')
-			   {
-			   mysqli_query($con, "delete from register where id='$_REQUEST[del_id]'") or die("Error in Selecting " . mysqli_error($con));
-			   
-			   echo "<div class='alert alert-danger'>Data Deleted SUccessfully</div>";
+			   if (isset($_REQUEST['del']) && $_REQUEST['del']) {
+					mysqli_query($con, "delete from register where id='$_REQUEST[del]'") or die("Error in Selecting " . mysqli_error($con));
+					
+					echo "<div class='alert alert-danger'>Data Deleted SUccessfully</div>";
+					header('location: '.$_SERVER['PHP_SELF']);
+					exit(); //optional
 			   }
 			   
 			   echo "<table class='table'>";
 			   
-			   	echo "<tr>
+			   	echo "<thead class='thead-light'>
+
+				   <tr class='font-weight-bold'>
 		<td>  Name </td>
 		<td>  Username </td>
 		
 		<td>  Course </td>
 			
-		<td>  Del </td>
+		<td>  Delete </td>
 		
-		</tr>";
+		</tr>
+				   </thead>";
 			   	  $sql2 = "select *  from register";
     $result2 = mysqli_query($con, $sql2) or die("Error in Selecting " . mysqli_error($con));
-
     while($row2 =mysqli_fetch_array($result2))
     {
+		
 		echo "<tr>
+		
 		<td>  $row2[name] </td>
 		<td>  $row2[username] </td>
 		
 		<td>  $row2[course] </td>
 		
-		<td> <a href='?del_id=$row2[id]'>Del</a> </td>
+		<td> <a class='btn btn-danger' href='?del=$row2[id]'>Del</a> </td>
 		</tr>";
 	}
 	echo "</table>";

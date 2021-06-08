@@ -1,5 +1,5 @@
 <?php
-include("header2.php");
+include("header2.php")
 ?>
         <!-- Top Bar End -->
 
@@ -12,8 +12,7 @@ include("header2.php");
         <div class="service mt-125">
             <div class="container">
                 <div class="section-header">
-                    <p>Choose Your Task</p>
-                    <h2>Our Best Services</h2>
+                    <h2>Add Student</h2>
                 </div>
                 <div class="row">
                    
@@ -26,13 +25,13 @@ include("header2.php");
 				   
 				   
 				   
-				   <form action='reginsert.php' method='post' novalidate="novalidate">
+				   <form action='insert.php' method='post' novalidate="novalidate">
 				   
 				   
 				   
 				   	<?php
 				  if($_REQUEST['a']==1)
-				  echo "<div class='alert alert-danger'>REGISTERED SUCCESSFUL ...</div>";
+				  echo "<div class='alert alert-success'>REGISTERED SUCCESSFULLY</div>";
 				  ?>
                             <div id="success"></div>
                            
@@ -41,18 +40,18 @@ include("header2.php");
 
 						   
                               <div class="control-group">
-                                    <input type="text" class="form-control" id="name" name='name' placeholder="Enter Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                    <input type="text" class="form-control" id="name" name='name' placeholder="Enter Student Name" required="required" data-validation-required-message="Please enter your name" />
                                     <p class="help-block text-danger"></p>
                                 </div>  
 
 
 
 							   <div class="control-group">
-                                    <input type="text" class="form-control" id="name" name='username' placeholder="Your Username" required="required" data-validation-required-message="Please enter your name" />
+                                    <input type="text" class="form-control" id="name" name='username' placeholder="Student Username" required="required" data-validation-required-message="Please enter your name" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group">
-                                    <input type="password" class="form-control" id="email" name='password' placeholder="Your Password" required="required" data-validation-required-message="Please enter your email" />
+                                    <input type="password" class="form-control" id="email" name='password' placeholder="Password" required="required" data-validation-required-message="Please enter your email" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group">
@@ -68,7 +67,7 @@ include("header2.php");
 								
                                
                                 <div>
-								<input type='submit' value='Register' name='Register'>
+								<input type='submit' value='Register' >
                                  
                                 </div>
 								

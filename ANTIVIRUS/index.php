@@ -1,7 +1,15 @@
 <?php
 session_start();
-session_destroy();
-include("header.php");
+error_reporting(0);
+if($_SESSION['login_name']=="")
+{   
+	include("header.php");
+}
+else{
+	include("header3.php");
+}
+
+
 ?>
     
 

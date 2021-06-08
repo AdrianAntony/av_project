@@ -43,12 +43,38 @@ $page = basename($_SERVER['PHP_SELF']);
                         <div class="top-bar-left">
                             
                             <div class="text">
-                                <h2><?php if($page =='staff_dashboard.php'){ echo "Home";}
-								
-                                else if($page=='file_details.php'){echo "Files";} 
-							
-								
-                                else if($page=='dashboard.php'){echo "Services";} ?> </h2>
+                                <h2>
+                                 <?php
+                                    
+                                    switch ($page){
+                                        case "dashboard.php": echo "Services";
+                                        break;
+
+                                        case "ass_upload.php": echo "Assignments";
+                                        break;
+
+                                        case "exam_upload.php": echo "Exam";
+                                        break;
+
+                                        case "contact.php": echo "Contact";
+                                        break;
+
+                                        case "index.php": echo "Home";
+                                        break;
+
+                                        case "about.php": echo "About";
+                                        break;
+
+                                        case "cert_upload.php": echo "Documents";
+                                        break;
+
+                                        default : echo "EasyEDU";
+                                    }
+
+
+
+                                 ?> 
+                                 </h2>
                             </div>
                         </div>
                     </div>
@@ -77,11 +103,11 @@ $page = basename($_SERVER['PHP_SELF']);
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
                     <a href="index.php" <?php if($page == 'index.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Home</a>
-                        <a href="dashboard.php" <?php if($page == 'dashboard.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Services</a>
+                        <a href="dashboard.php" <?php if($page == 'dashboard.php' && 'ass_upload.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Services</a>
                         
                      
                         
-                        <a href="slogin.php" class="nav-item nav-link">Logout</a>
+                        <a href="login.php" class="nav-item nav-link">Logout</a>
                         <a href="about.php" <?php if($page == 'about.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>About</a>
                         <a href="contact.php" <?php if($page == 'contact.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Contact</a>
                     </div>

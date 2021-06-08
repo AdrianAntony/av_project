@@ -1,5 +1,5 @@
 <?php
-include("header_staff.php");
+include("header2.php");
 ?>
         <!-- Top Bar End -->
 
@@ -13,18 +13,18 @@ include("header_staff.php");
             <div class="container">
                 <div class="section-header">
                     <p>Choose Your Task</p>
-                    <h2>Our Best Services</h2>
+                    <h2>Admin Activities</h2>
                 </div>
                 <div class="row">
                   
  <div class="col-lg-3 col-md-6">
                         <div class="service-item">
                             <img src="img/icon-4.png" alt="Icon">
-                            <h3>Student</h3>
+                            <h3>Students</h3>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
+                                View and Delete Students.
                             </p>
-                            <a href="student_details.php">Student Dashboard</a>
+                            <a href="student_details.php">View Student</a>
                         </div>
                     </div>
 					
@@ -32,11 +32,11 @@ include("header_staff.php");
 				  <div class="col-lg-3 col-md-6">
                         <div class="service-item">
                             <img src="img/icon-4.png" alt="Icon">
-                            <h3>Student</h3>
+                            <h3>Add Student</h3>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
+                                Add a New Student.
                             </p>
-                            <a href="student_form.php">Student Dashboard</a>
+                            <a href="student_form.php">Add Student</a>
                         </div>
                     </div>
 					
@@ -45,9 +45,9 @@ include("header_staff.php");
                             <img src="img/icon-4.png" alt="Icon">
                             <h3>Faculty</h3>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
+                                View and Delete Faculty.
                             </p>
-                            <a href="faculty_form.php">Faculty Add</a>
+                            <a href="staff_details.php">View Faculty</a>
                         </div>
                     </div>
 					
@@ -55,11 +55,11 @@ include("header_staff.php");
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item">
                             <img src="img/icon-4.png" alt="Icon">
-                            <h3>Faculty</h3>
+                            <h3>Add Faculty</h3>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
+                                Add a New Faculty.
                             </p>
-                            <a href="staff_details.php">Faculty </a>
+                            <a href="faculty_form.php">Add Faculty</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
