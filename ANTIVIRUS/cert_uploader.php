@@ -1,64 +1,94 @@
 <?php
-session_start();
-
-include("db/connection.php");
-$target_path = "uploads/";
-
-$target_path = $target_path . date("Y-m-d-h-i-s").basename( $_FILES['uploadedfile']['name']); 
-				$ext=explode(".",basename( $_FILES['uploadedfile']['name']));
-				$count=count($ext)-1;
-				$extension=$ext[$count];
-				
-				if($extension=="jpg" || $extension=="png" || $extension=="pdf")
-				{
-				echo "<img src='icon/J.jpeg' height='20'>";
-				move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path);
-				mysqli_query($con,"insert into sd_file (file,username,category) value ('$target_path','$_SESSION[login_user]','certificate')");
-				header("location:cert_upload.php");
-				}
-else {
+include("header3.php");
 
 
 
 
 
-$file=$target_path;
-               // echo "<a href='$file' target='_blank'>".date("Y-m-d-h-i-s").basename( $_FILES['uploadedfile']['name'])."</a>";
-				
-				$hash=hash_file('md5', $file);
+error_reporting(0);
+?>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+     
+        <!-- Nav Bar End -->
+        
+
+        <!-- Service Start -->
+        <div class="service mt-125">
+            <div class="container">
+			<?php
+			if($_REQUEST['status']!="")
+			{
+				echo "<div class='alert alert-danger'>virus found</div>";
+			}
+			if($_REQUEST['a']==1)
+			{
+			echo "<div class='alert alert-success'>File Uploaded Successfully</div>";
+			}
+			
+			
+			
+			
+			
+			
+			include("../funcIn.php");
+			
+			
+			
+			
+			?>
+              <h1>Upload Certificate Files</h1>
+			  
+			  <form enctype="multipart/form-data" action="cert_uploader.php" method="POST">
+
+Choose a file to upload: <input name="uploadedfile" type="file" /><br />
+<input type="submit" value="Upload File" />
+</form>
+			  
+			  
+			  
+			  
+			  
+			  
+			  <?php
+			  include("db/connection.php");
+			  echo "<table class='table'>";
+			  mysqli_query($con, "delete FROM sd_file where id='$_REQUEST[del]'");
+			  	  $sql2 = "select *  from sd_file where username='$_SESSION[login_user]' ";
+    $result2 = mysqli_query($con, $sql2) or die("Error in Selecting " . mysqli_error($connection));
+while($row2 =mysqli_fetch_array($result2))
+{
+	echo "<tr><td><a href='$row2[file]' target='_blank'>My File $row2[file]</a></td><td><a href='?del=$row2[id]'>delete</a></td></tr> ";
+
+	
+				 
 		
-				
-$marks = array('26f44f14f1587a23ba08ce7206bcb77c', '9b6b00fe8ecb35176b06555b7e67ade7', 70, 87);
-  
-if (in_array($hash, $marks))
-  {
-  	echo "<span class='badge alert-danger'>Virus Found</span>";
-	unlink($file);
-  }
-else
-  {
-  //echo "not found";
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-header("location:cert_upload.php?status=virus found");
 }
+
+echo "</table>";
+			  
+			  
+			  
+			  ?>
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+        </div>
+        <!-- Feature End -->
+
+
+        <!-- Footer Start -->
+       
+<?php
+include("footer.php");
+
 ?>
