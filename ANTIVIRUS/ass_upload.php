@@ -11,7 +11,29 @@ include("header1.php");
         <!-- Service Start -->
         <div class="service mt-125">
             <div class="container">
-              <h1>Upload Assignment Files</h1>
+
+            <?php
+			if($_REQUEST['status']!="")
+			{
+				echo "<div class='alert alert-danger'>virus found</div>";
+			}
+			if($_REQUEST['a']==1)
+			{
+			echo "<div class='alert alert-success'>File Uploaded Successfully</div>";
+			}
+			
+			
+			
+			
+			
+			
+			include("../funcIn.php");
+			
+			
+			
+			
+			?>
+              <h1 class="pt-4">Upload Assignment Files</h1>
 			  
 			  <form enctype="multipart/form-data" action="ass_uploader.php" method="POST">
 

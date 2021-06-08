@@ -38,7 +38,7 @@ error_reporting(0);
 			
 			
 			?>
-              <h1>Upload Certificate Files</h1>
+              <h1 class="pt-4">Upload Certificate Files</h1>
 			  
 			  <form enctype="multipart/form-data" action="cert_uploader.php" method="POST">
 

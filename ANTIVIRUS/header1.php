@@ -84,6 +84,18 @@ $page = basename($_SERVER['PHP_SELF']);
                                     case "about.php": echo "About";
                                     break;
 
+                                    case "dashboard.php": echo "Services";
+                                    break;
+
+                                    case "exam_upload.php": echo "Exam";
+                                    break;
+
+                                    case "ass_upload.php": echo "Assignment";
+                                    break;
+
+                                    case "cert_upload.php": echo "Submit Documents";
+                                    break;
+
                                     default : echo "EasyEDU";
                                 }
 
@@ -119,7 +131,8 @@ $page = basename($_SERVER['PHP_SELF']);
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
                     <a href="index1.php" <?php if($page == 'index1.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Home</a>
-                        <a href="dashboard.php" <?php if($page == 'dashboard.php'||'ad_dashboard.php'||'staff_dashboard.php'){ echo ' class="nav-item nav-link active"';}else{echo 'class="nav-item nav-link"';}?>>Services</a>
+                        <a <?php if ($page == 'dashboard.php') {echo 'href="dashboard.php"';}else if ($page == 'ad_dashboard.php') {echo 'href="ad_dashboard.php"';}  else if ($page == 'staff_dashboard.php') {echo 'href="staff_dashboard.php"';} ?>
+                                                                                                 <?php if ($page == 'dashboard.php'||'ad_dashboard.php'||'staff_dashboard.php'){ echo ' class="nav-item nav-link active"';}else {echo ' class="nav-item nav-link"';}?>>Services</a>
                         
                      
                         
